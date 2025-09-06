@@ -45,7 +45,7 @@ $ImageName = "dont-be-suspicious"
 
 $fn = Get-Name
 
-echo "Hey CRAZY PANDA" >> $Env:temp\foo.txt
+echo "Hey" $fn >> $Env:temp\foo.txt
 
 echo "`nYour computer is not very secure" >> $Env:temp\foo.txt
 
@@ -401,12 +401,10 @@ $s.Speak("The FBI Most Wanted Hacker")
 $s.Speak("Your title has been revoked.")
 $s.Speak("The new master is here")
 $s.Speak("Good luck next time")
-$s.Speak("We know where you are")
-$s.Speak("We are everywhere")
-$s.Speak("Expect us")
 
 clean-exfil
 
 #------------------------------------------------------------------------------------------------------
+
 
 
